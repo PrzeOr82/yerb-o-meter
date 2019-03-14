@@ -30,4 +30,8 @@ body {
     width: 50%;
 }
 
-#list {}
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

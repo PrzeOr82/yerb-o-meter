@@ -20,7 +20,7 @@ addItem = () => {
     obj = new Item(addedYerba, option);
     list.push(obj);
 
-    table.insertAdjacentHTML('beforeEnd', `<tr><td>${obj.name}</td><td>${obj.score}</td><td><i class="fas fa-pen"></i></td></i><td><i class="fas fa-trash-alt"></td></tr>`);
+    table.insertAdjacentHTML('beforeEnd', `<tr><td>${obj.name}</td><td>${obj.score}</td><td><button class="btn" style="color:green"><i class="fas fa-pen"></i></button></td><td><button class="btn" style="color:red"><i class="fas fa-trash-alt"></i></button></td></tr>`);
     document.querySelector('#addedYerba').value = ''
     dropdown.selectedIndex = 0;
 
