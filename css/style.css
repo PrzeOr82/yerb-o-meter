@@ -1,0 +1,33 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/4f/b2/8a/4fb28a6948afcd6ab55435927366e6c8.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.bg {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+#container {}
+
+#title {
+    margin-top: 50px;
+}
+
+#title>h1 {
+    font-size: 60px;
+}
+
+#add>input {
+    width: 50%;
+}
+
+#list {}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Yerb-o-meter</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title" class="bg">
+            <h1>yerb-o-meter</h1>
+            <h3>add and rate yerba mate</h3>
+        </div>
+        <br>
+        <div id="add" class="bg">
+            <input id="addedYerba" type="text" placeholder=" enter name of yerba mate...">
+            <select id="dropdown">
+                <option value="0" disabled selected>choose from list below...</option>
+                <option value="1">1 very bad</option>
+                <option value="2">2 quite bed</option>
+                <option value="3">3 ok</option>
+                <option value="4">4 quite good</option>
+                <option value="5">5 very good</option>
+            </select>
+            <button>ADD</button>
+        </div>
+        <br>
+        <div id="list" class="bg">
+            <h3>list and score of added yerba mate</h3>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nazwa</th>
+                        <th>ocena</th>
+                        <th>edycja</th>
+                        <th>usuń</th>
+                    </tr>
+                </thead>
+                <tbody id="lista">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
