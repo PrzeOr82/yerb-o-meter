@@ -7,6 +7,7 @@ let list = [];
 let obj = {};
 let num = table.lastElementChild.getAttribute('id').replace('item', '') * 1;
 let btnRem;
+let row;
 
 class Item {
     constructor(name, score) {
@@ -15,11 +16,11 @@ class Item {
     }
 }
 
-
-getBtnId = (btnList) => {
+btnAddRemFunction = (btnList) => {
     for (i = 0; i < btnList.length; i++) {
         btnList[i].onclick = function(e) {
-            alert(this.id);
+            row = document.getElementById('item' + this.id.replace('btnRem', ''));
+            row.remove();
         }
     }
 }
@@ -37,7 +38,7 @@ addItem = () => {
     dropdown.selectedIndex = 0;
     btnRem = document.querySelectorAll('button[id^="btnRem"]');
 
-    getBtnId(btnRem);
+    btnAddRemFunction(btnRem);
 }
 
 btnAdd.addEventListener('click', addItem);
