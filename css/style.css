@@ -6,6 +6,7 @@
 body {
     background-image: url('https://i.pinimg.com/originals/4f/b2/8a/4fb28a6948afcd6ab55435927366e6c8.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -20,6 +21,9 @@ body {
 
 #title {
     margin-top: 50px;
+    color: rgb(100, 151, 78);
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
 }
 
 #title>h1 {
@@ -28,6 +32,17 @@ body {
 
 #add>input {
     width: 50%;
+    padding: 10px;
+}
+
+#add>select {
+    padding: 10px;
+}
+
+#btnAdd {
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .btn {
